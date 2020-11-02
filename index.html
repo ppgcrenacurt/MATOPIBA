@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>MATOPIBA: uso e cobertura do solo</title>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+  <div id="Page1">
+    <embed type="text/html" src="matopiba08.html" width="100%" height="100%"> 
+    <a href="#" onclick="return show('Page2','Page1');">Ir para 2018</a>
+  </div>
+
+  <div id="Page2" style="display:none">
+     <embed type="text/html" src="matopiba18.html" width="100%" height="100%"> 
+    <a href="#" onclick="return show('Page1','Page2');">Ir para 2008</a>
+  </div>
+
+</body>
+</html>
